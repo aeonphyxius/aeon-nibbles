@@ -1,5 +1,5 @@
 #include "raylib.h"
-#include <core/config.hpp>
+// #include "core/config.hpp"
 #include <stdlib.h>           // Required for: free()
 
 int main(void)
