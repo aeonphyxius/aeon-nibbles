@@ -12,6 +12,7 @@
 ********************************************************************************************/
 
 #include "raylib.h"
+#include <inputmanager.h>
 
 #if defined(PLATFORM_WEB)
     #include <emscripten/emscripten.h>

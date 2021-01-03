@@ -16,14 +16,16 @@
             ],
             "compilerPath": "${workspaceFolder}/../raylib/mingw/bin/gcc.exe",
             "cStandard": "c99",
-            "cppStandard": "c++14",
+            "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64"
         },
         {
             "name": "Mac",
             "includePath": [
                 "/usr/local/Cellar/raylib/3.5.0/include/**",
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/src/**"
+
             ],
             "defines": [
                 "_DEBUG",
@@ -37,7 +39,7 @@
             ],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c11",
-            "cppStandard": "c++14",
+            "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64"
         },
         {

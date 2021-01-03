@@ -1,9 +1,5 @@
-#ifndef _MAP_H
-#define _MAP_H
-
-
 /****************************************************************************
-Copyright (c) 2017 Alejandro Santiago Varela
+Copyright (c) 2018 Alejandro Santiago Varela
 
 http://www.aeonphyxius.com
 
@@ -25,17 +21,22 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ****************************************************************************/
+#ifndef INPUTMANAGER_H
+#define INPUTMANAGER_H
 
-#include <string>
-#define SQUARE_SIZE     31
+#include <map>
 
-namespace aeon_niblles
+using namespace std;
+
+namespace aeonLib
 {
-	class Map
-	{
+    class InputManager
+    {
+        std::map<int, std::function<void(void)>> m_callbacksList;
 
-	public:
-
-	};
+        public:
+        bool getKeyDown(int key);
+        bool getButtonDown(int key);
+    };
 }
-#endif /* defined( _MAP_H )*/
+#endif /* INPUTMANAGER_H */
